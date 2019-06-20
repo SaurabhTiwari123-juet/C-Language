@@ -1,2 +1,2 @@
 # C-Language
-Some codes in C
+ Some Codes in C to see my progress
