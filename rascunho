@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main(){
+    float valor;
+
+    int valor2, valor_3;
+    int nota_100, nota_50, nota_20, nota_10, nota_5, nota_2, moeda_1,moeda_50, moeda_25, moeda_10, moeda_5, moeda_01;
+    scanf("%f", &valor);
+
+    valor2 = valor;
+    valor_3 = (valor - valor2) * 100;
+
+    nota_100 = valor2 / 100;
+
+    nota_50 = valor2 % 100 / 50;
+
+    nota_20 = valor2 % 100 % 50 / 20;
+
+    nota_10 =  valor2 % 100 % 50 % 20 / 10;
+
+    nota_5 =  valor2 % 100 % 50 % 20 % 10 / 5;
+
+    nota_2 =  valor2 % 100 % 50 % 20 % 10 % 5 /2;
+
+    moeda_1 =  valor2 % 100 % 50 % 20 % 10 % 5 % 2;
+
+    moeda_50 =  valor_3 / 50;
+
+    moeda_25 =  (valor_3 % 50) / 25 ;
+
+    moeda_10 =  ((valor_3 % 50) % 25 )/ 10;
+
+    moeda_5 =  (((valor_3 % 50) % 25) % 10) / 5;
+
+    moeda_01 =  (((valor_3 % 50) % 25) % 10) % 5;
+
+
+
+    printf ("Notas de 100: %d", nota_100);
+    printf ("\nNotas de 50: %d", nota_50);
+    printf ("\nNotas de 20: %d", nota_20);
+    printf ("\nNotas de 10: %d", nota_10);
+    printf ("\nNotas de 5: %d", nota_5);
+    printf ("\nNotas de 2: %d", nota_2);
+    printf ("\nMoedas de 1: %d", moeda_1);
+    printf ("\nMoedas de 0.5: %d", moeda_50);
+    printf ("\nMoedas de 0.25: %d", moeda_25);
+    printf ("\nMoedas de 0.10: %d", moeda_10);
+    printf ("\nMoedas de 0.05: %d", moeda_5);
+    printf ("\nMoedas de 0.01: %d", moeda_01);
+
+
+    return 0;
+}
